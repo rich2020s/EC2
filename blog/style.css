@@ -1,24 +1,28 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-button{
+
+button {
   cursor: pointer;
 }
-body{
+
+body {
   min-height: 100vh;
   position: relative;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.navbar{
+
+.navbar {
   display: flex;
   align-items: center;
   position: fixed;
   width: 100%;
   height: 80px;
-  top:0;
+  top: 0;
   z-index: 999;
   background: white;
   justify-content: space-between;
@@ -26,7 +30,7 @@ a{
   box-sizing: border-box;
   padding: 0 20px;
 }
-.navbar__blogname{
+.navbar__blogname {
   font-size: 28px;
   margin-left: 5px;
   display: inline-block;
@@ -39,7 +43,8 @@ a{
   font-size: 16px;
   color: #787878;
 }
-.wrapper{
+
+.wrapper {
   background: black;
   color: white;
   height: 240px;
@@ -50,33 +55,34 @@ a{
   justify-content: center;
   margin-top: 80px;
 }
-.posts{
+
+.posts {
   max-width: 920px;
   margin: 20px auto;
   background: white;
-  
 }
-.post{
+
+.post {
   max-width: 920px;
-  border:solid 1px #9a9a9a;
+  border: solid 1px #9a9a9a;
   box-sizing: border-box;
 }
-.post ~ .post{
-  margin-top: 40px; 
+.post ~ .post {
+  margin-top: 40px;
 }
-.post__container{
+.post__container {
   margin: 0 30px;
 }
-.post__container div:first-child{
+.post__container div:first-child {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.post__title ,.post__title  ~ a{
+.post__title, .post__title ~ a {
   display: inline-block;
 }
-.post__editbtn{
+.post__editbtn {
   font-size: 14px;
   color: #a8a8a8;
   background: white;
@@ -84,19 +90,27 @@ a{
   border-radius: 3px;
   padding: 2px 6px;
 }
-.post__info{
+.post__info {
   background: #eeeeee;
   padding: 10px 0;
   padding-left: 10px;
   margin-bottom: 15px;
 }
-.readmore__btn{
+.post__info--username {
+  margin-right: 10px;
+}
+.post__content {
+  margin: 30px 0;
+}
+
+.readmore__btn {
   margin: 20px 0;
   background: white;
-  border:1px solid black;
+  border: 1px solid black;
   padding: 8px 16px;
 }
-.footer{
+
+.footer {
   width: 100%;
   background: #323232;
   color: #fefefe;
@@ -104,51 +118,50 @@ a{
   text-align: center;
   line-height: 35px;
   font-size: 14px;
-  position:absolute;
-  top:calc(100% + 50px);
+  position: absolute;
+  top: calc(100% + 50px);
 }
 
-.login{
+.login {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login__card{
-  margin-top: 40px; 
+.login__card {
+  margin-top: 40px;
   width: 530px;
   height: 580px;
-  border:1px solid black;
+  border: 1px solid black;
 }
-
 .login__card input {
   width: 400px;
-}
-.login__card--title{
-  text-align: center;
-  font-size: 32px;
-  margin-top:75px;
-  margin-bottom: 60px;
-}
-.login__form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .login__card--input {
   margin-bottom: 26px;
   height: 30px;
   box-sizing: border-box;
 }
-.login__card--desc{
+.login__card--title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 75px;
+  margin-bottom: 60px;
+}
+.login__card--desc {
   text-align: left;
   width: 400px;
   font-size: 14px;
   margin-bottom: 14px;
 }
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.submit__btn{
+.submit__btn {
   color: white;
   background: black;
   height: 50px;
@@ -156,17 +169,18 @@ a{
   cursor: pointer;
   margin: 0;
 }
-.manage{
+
+.manage {
   max-width: 920px;
   margin: 0 auto;
 }
-.manage__container{
+.manage__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
 }
-.manage__container--title{
+.manage__container--title {
   font-family: MicrosoftJhengHei;
   font-size: 16px;
   font-weight: normal;
@@ -175,26 +189,30 @@ a{
 .manage__container ~ .manage__container {
   border-top: 1px solid #9a9a9a;
 }
-.hiden{
+
+.hiden {
   display: none;
 }
-#editor{
+
+#editor {
   width: 100%;
   height: 300px;
 }
-.ck-content{
-  height:300px;
+
+.ck-content {
+  height: 300px;
 }
-.newpost__container{
-  padding:20px;
+
+.newpost__container {
+  padding: 20px;
 }
-.newpost__title{
+.newpost__title {
   width: 90%;
-  margin:20px auto;
+  margin: 20px auto;
   height: 30px;
   font-size: 24px;
 }
-.newpost__btn{
+.newpost__btn {
   font-size: 14px;
   background: white;
   border: 1px solid #a8a8a8;
@@ -203,9 +221,5 @@ a{
   margin: 30px 5px 10px 90%;
   cursor: pointer;
 }
-.post__content{
-  margin: 30px 0;
-}
-.post__info--username{
-  margin-right: 10px;
-}
+
+/*# sourceMappingURL=output.css.map */
